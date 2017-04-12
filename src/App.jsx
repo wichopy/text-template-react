@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+const ReactDOMServer = require('react-dom/server');
 import logo from './logo.svg';
 import './App.css';
 const htmlparser = require('fast-html-parser');
+const HtmlToReactParser = require('html-to-react').Parser;
+const htmlToReactParser = new HtmlToReactParser();
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +31,9 @@ class App extends Component {
     render() {
         const { sampleClause } = this.state;
         const inputFields = this.Parser(sampleClause);
+        const reactElement = htmlToReactParser.parse(sampleClause);
+        console.log(reactElement)
+        console.log(sampleClause)
         return (
             <div className="App" >
                 <div className="App-header" >
@@ -50,7 +56,7 @@ class App extends Component {
                             } 
                         </div> 
                         <div className="col-md-10" >
-                            {sampleClause}
+                            {reactElement}
                         </div> 
                     </div> 
                 </div> 
