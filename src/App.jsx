@@ -71,6 +71,7 @@ class App extends Component {
                     <div className="row">
                         <div className="col-md-2" > 
                             {inputFields.map((inputField, i) => {
+                                {/*this.setState({i+''+inputField})*/}
                                 return ( 
                                     <div key={ i } >
                                         <p > { i+'. '+inputField } </p> 
