@@ -6,9 +6,16 @@
     animation: App-logo-spin infinite 20s linear;
     height: 80px;
 }
+.field-label {
+    margin: .25em;
+}
 
+.mark {
+    color: red;
+}
 .note {
-    font-size: 50%;
+    font-size: 70%;
+    margin: .1em;
 }
 .App-header {
     background-color: #222;
