@@ -7,6 +7,9 @@
     height: 80px;
 }
 
+.note {
+    font-size: 50%;
+}
 .App-header {
     background-color: #222;
     height: 150px;
