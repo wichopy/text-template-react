@@ -5,7 +5,6 @@
   "dependencies": {
     "fast-html-parser": "^1.0.1",
     "html-to-react": "^1.2.4",
-    "htmlparser2": "^3.9.2",
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
   },
